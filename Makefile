@@ -118,7 +118,7 @@ else
 BINUTILSDIR	= $(shell cd $(BINUTILS);pwd)
 endif
 
-CPPFLAGS	+= -I$(BINUTILSDIR)/include -I$(BINUTILS)/bfd -I$(TARGET_DIR)/bfd
+CPPFLAGS	+= -I$(BINUTILSDIR)/include -I$(BINUTILSDIR)/bfd -I$(TARGET_DIR)/bfd
 CPPFLAGS	+= -DLIBARCH_$(LIBARCH) -DLIBARCH=\"$(LIBARCH)\" -DLIB_EXT=\"$(LIB_EXT)\"
 
 TARGET_DIR	= build/$(OS)-$(JDKARCH)
