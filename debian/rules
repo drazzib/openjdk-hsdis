@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	mkdir build/
+	tar xaf /usr/src/binutils/binutils-*.tar.xz -C build/
+	mv build/binutils-* build/binutils
+	$(MAKE) all
+
+override_dh_auto_install:
+	dh_install build/linux-*/hsdis-*.so /usr/lib/$(DEB_HOST_MULTIARCH)/
+
+override_dh_auto_clean:
+	$(MAKE) clean
+	rm -rf build/

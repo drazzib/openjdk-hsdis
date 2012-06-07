@@ -1,0 +1,5 @@
+openjdk-hsdis (0.0.20120605-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Tue, 05 Jun 2012 23:40:48 +0200

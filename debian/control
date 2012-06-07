@@ -1,0 +1,20 @@
+Source: openjdk-hsdis
+Priority: extra
+Maintainer: Damien Raude-Morvan <drazzib@debian.org>
+Build-Depends: binutils-source, debhelper (>= 9)
+Standards-Version: 3.9.3
+Section: libs
+Homepage: https://github.com/drazzib/openjdk-hsdis
+
+Package: libopenjdk-hsdis
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Conflicts: libbase-hsdis
+Multi-Arch: same
+Description: HotSpot plugin for disassembling dynamically generated code
+ 'hsdis' is an plugin for disassembling dynamically generated code
+ by HotSpot Java JVM. It's based on disassembling provided by binutils
+ and therefor is statically build with binutils-source package.
+ .
+ This plugin come from OpenJDK source code, hotspot/src/share/tools/hsdis/.
