@@ -32,7 +32,7 @@ sudo mk-build-deps -i -r
 
 + Build package
 ```
-debuild -b -uc -us
+debuild --no-lintian -b -uc -us
 ```
 
 + Install package
